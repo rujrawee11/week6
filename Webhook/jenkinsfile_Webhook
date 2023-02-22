@@ -14,25 +14,30 @@ pipeline {
                 sh 'python3  Webhook/main.py'
             }
         }
-        stage('deploy'){
-        echo 'Deploy build'
+         stage('deploy') {
+            steps {
+                
+                echo 'Deploy'
+            }
         }
-            stage('release'){
-         echo 'Release'
+           stage('release') {
+            steps {
+                
+                echo 'release'
+    
+            }
         }
         
     }
     post{
-    always{
-    echo 'Always'
+         always{
+          echo 'Always'
     }
-    success{
-    echo 'success'
+         success{
+           echo 'success'
     }
-    failure{
-    echo 'failure'
+           failure{
+            echo 'failure'
     }
-    
-    
     }
 }
