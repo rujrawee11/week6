@@ -13,7 +13,7 @@ Linux
             steps {
                 
                 sh 'echo welcome to first pipeline'
-                sh 'python3 -version'
+                sh 'python3 --version'
             }
         }
     }
