@@ -15,10 +15,10 @@ pipeline {
             }
         }
         stage('deploy'){
-        sh 'echo Deploy build'
+        echo 'Deploy build'
         }
             stage('release'){
-        sh 'echo Release'
+         echo 'Release'
         }
         
     }
